@@ -1,0 +1,15 @@
+1) create service provider for Reportbuilder
+2) create Reportbuilder ,  inside it create folder Facades 
+3) craete a Facades class inside Facades folder with file name Reportbuilder.php
+4) create a class in Reportbuilder folder
+
+5) Register service provider in app.php inside config folder
+6) Create aliases in app.php inside config folder
+
+7) use in your controller anywhere as 
+	
+	use App\Reportbuilder\Reportbuilder;
+	$ordernew = new Reportbuilder('users');
+    $order = $ordernew->build('users')->get($parameters); 
+
+
